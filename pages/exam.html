@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Page</title>
+    <link rel="stylesheet" href="../css/exam.css">
+</head>
+
+<body>
+    <section class="examBody">
+        <div class="container">
+            <div class="examTimeContainer">
+                <div id="examTime"></div>
+            </div>
+            <div class="examContainer">
+                <div class="examContent">
+                    <div id="quesContainer"></div>
+                    <div id="btnsContainer">
+                        <div class="btnsContent">
+                            <button id="prevBtn" onclick="showPrev()">Prev</button>
+                            <button id="numBtn">1</button>
+                            <button id="nextBtn" onclick="showNext()">Next</button>
+                        </div>
+                        <button class="markBtn" onclick="markQuestion()">mark</button>
+                    </div>
+                </div>
+                <div id="markContainer"> </div>
+            </div>
+            <div class="submitContainer">
+                <button class="submitBtn" onclick="calcResult()">submit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/cookie.js"></script>
+    <script src="../js/exam.js"></script>
+</body>
+
+</html>

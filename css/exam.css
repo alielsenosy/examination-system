@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+li {
+  list-style: none;
+}
+button {
+  border-radius: 5px;
+  border: none;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.examBody {
+  height: 100vh;
+}
+
+.examTimeContainer {
+  border-radius: 5px;
+  width: 100%;
+  height: 5px;
+  background: #e9ecef;
+}
+
+#examTime {
+  border-radius: 5px;
+  width: 0;
+  height: 5px;
+  background: #0481fd;
+}
+
+.examContainer {
+  flex-grow: 1;
+  margin: 10px 0;
+  display: flex;
+}
+
+.examContent {
+  background: #f5f5f5;
+  flex-grow: 1;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#quesContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.quesContent {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.answerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.answerContent {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #fdcb77;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 450px;
+  background: #fee8c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+.answerContent:hover {
+  border: 2px solid #28a745;
+}
+.answerTxt {
+  flex-grow: 1;
+}
+
+#btnsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#btnsContainer button,
+.quesBtn {
+  border-radius: 3px;
+  padding: 7px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btnsContent {
+  margin: 0 10px;
+}
+#prevBtn {
+  visibility: hidden;
+}
+#prevBtn,
+#nextBtn {
+  background: #ffffff;
+}
+#numBtn {
+  padding: 7px 10px;
+  background: #007bff;
+  color: #ffffff;
+}
+.markBtn {
+  background: #fdcb77;
+  margin-left: 20px;
+}
+.markedQues{
+  background: #28a745;
+  color: #ffffff;
+}
+
+#markContainer {
+  background: #fee8c3;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quesBtn {
+  padding: 10px;
+  background: #fdcb77;
+}
+
+.removeBtn {
+  font-size: 14px;
+  padding: 10px;
+  background: #fdcb77;
+}
+
+.submitBtn {
+  cursor: pointer;
+  width: 100%;
+  padding: 7px;
+  background: #007bff;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.submitBtn:hover,
+#markBtn:hover,
+#prevBtn:hover,
+#nextBtn:hover,
+.quesBtn:hover {
+  background: #28a745;
+  color: #ffffff;
+}

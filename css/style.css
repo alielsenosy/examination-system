@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-image: url("../images/yellowBg.jpg");
+  background-size: cover;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: #ffffff;
+  max-width: 470px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #757575;
+  text-align: right;
+}
+
+.signUpForm {
+  height: auto;
+}
+.inputContainer {
+  margin: 50px 0;
+}
+
+.inputContainer div {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.inputContainer div label {
+  font-size: 20px;
+  color: #007bff;
+  text-shadow: 1px 1px 0px #3f3f3f;
+}
+
+.inputContainer div span {
+  color: #ff0000;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 15px 0 5px;
+  border-radius: 10px;
+  border: 2px solid #b1b1b1;
+}
+
+input:focus {
+  outline: 2px solid #28a745;
+  border: 2px solid #ffffff;
+}
+
+#submitBtn {
+  background: #007bff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: 2px solid #005ab9;
+  transition: 0.3s;
+}
+
+#submitBtn:hover {
+  background: #28a745;
+  border: 2px solid #228138;
+}
+
+/* _________________________________________________ */
+
+.invalidPara {
+  visibility: hidden;
+}
+
+.invalid {
+  display: block;
+}
+
+.invalid .invalidPara {
+  visibility: visible;
+}
+
+.invalid input {
+  border-color: #d10202;
+}
+
+/* _________________________________________________ */
