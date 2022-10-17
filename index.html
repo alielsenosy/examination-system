@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examination System</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up Page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+  <body>
     <section class="signUpForm">
-        <div class="form">
-            <h1>Sign Up</h1>
-            <div class="inputContainer">
-                <div id="firstNameContent">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" placeholder="Enter Your First Name">
-                    <span class="invalidPara">msg</span>
-                </div>
-                <div id="lastNameContent">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" placeholder="Enter Your Last Name">
-                    <span class="invalidPara">msg</span>
-                </div>
-                <div id="emailAddressContent">
-                    <label for="emailAddress">Email Address</label>
-                    <input type="text" id="emailAddress" placeholder="Enter Your EmailAddress">
-                    <span class="invalidPara">msg</span>
-                </div>
-                <div id="passwordContent">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter Your Password">
-                    <span class="invalidPara">msg</span>
-                </div>
-                <div id="reEnterPasswordContent">
-                    <label for="re-enterPassword">Re-enter Password</label>
-                    <input type="password" id="reEnterPassword" placeholder="Re-enter Your Password">
-                    <span class="invalidPara">msg</span>
-                </div>
-            </div>
-            <button id="submitBtn" onclick="submit()">submit</button>
+      <div class="form">
+        <h1>Sign Up</h1>
+        <div class="inputContainer">
+          <div id="firstNameContent">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter Your First Name"
+            />
+            <span class="invalidPara">msg</span>
+          </div>
+          <div id="lastNameContent">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter Your Last Name"
+            />
+            <span class="invalidPara">msg</span>
+          </div>
+          <div id="emailAddressContent">
+            <label for="emailAddress">Email Address</label>
+            <input
+              type="text"
+              id="emailAddress"
+              placeholder="Enter Your EmailAddress"
+            />
+            <span class="invalidPara">msg</span>
+          </div>
+          <div id="passwordContent">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter Your Password"
+            />
+            <span class="invalidPara">msg</span>
+          </div>
+          <div id="reEnterPasswordContent">
+            <label for="re-enterPassword">Re-enter Password</label>
+            <input
+              type="password"
+              id="reEnterPassword"
+              placeholder="Re-enter Your Password"
+            />
+            <span class="invalidPara">msg</span>
+          </div>
         </div>
+        <button id="submitBtn" onclick="submit()">submit</button>
+      </div>
     </section>
 
     <script src="js/cookie.js"></script>
     <script src="js/signUp.js"></script>
-</body>
-
+  </body>
 </html>
